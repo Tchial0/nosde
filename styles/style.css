@@ -1,0 +1,13 @@
+
+.card.render .card-img-top {
+	height: 100px;
+}
+
+.button-view-render{
+	opacity: 0;
+}
+
+.button-view-render:hover {
+	opacity: 0.8;
+	transition: opacity .5s ease;
+}
