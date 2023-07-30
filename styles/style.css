@@ -6,6 +6,10 @@
 	--open-sans: "Open Sans", sans-serif;
 }
 
+.bg-mydark {
+	background-color: var(--dark);
+}
+
 * {
 	font-family: var(--open-sans);
 }
@@ -26,12 +30,15 @@ footer {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
 .text-mywhite {
 	color: var(--white);
 }
+
 .text-golden {
   color: var(--gold);
 }
+
 .nav-link {
 	color:  var(--gray);
 }

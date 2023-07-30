@@ -14,16 +14,53 @@
 </head>
 
 <body>
+
+    <!-- Offcanvas -->
+    <div class="offcanvas d-md-none offcanvas-end bg-mydark" tabindex="-1" id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <div></div>
+            <button id="btnOffcanvasCloser" type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto align-items-center">
+                <li class="nav-item mb-3">
+                    <a class="nav-link hover-link fs-4" href="#home">Home</a>
+                </li>
+                <li class="nav-item mb-3">
+                    <a class="nav-link hover-link fs-4" href="#about">About</a>
+                </li>
+                <li class="nav-item mb-3">
+                    <a class="nav-link hover-link fs-4" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item mb-4">
+                    <a class="nav-link hover-link fs-4" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item mb-5">
+                    <a class="link-button" href="./files/resume.pdf">Resume</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
     <section id="home" class="position-relative">
-        <header class="p-3">
+        <header>
             <nav class="navbar navbar-expand-md">
                 <div class="container-fluid justify-content-md-center align-items-end">
-                    <a href="#" class="navbar-brand me-0"><img width="60px" src="./images/logo.png" /></a>
-                    <span class="p-2 text-golden ps-0 me-md-5" style="margin-left: -8px;"><b>EDSON DALA</b></span>
-                    <button class="btn navbar-toggler" type="button" data-bs-toggle="collapse"
+                    <div class="d-flex align-items-end">
+                        <a href="#" class="navbar-brand me-0"><img width="60px" src="./images/logo.png" /></a>
+                        <span class="p-2 text-golden ps-0 me-md-5"><b>EDSON DALA</b></span>
+                    </div>
+
+                   <!-- <button class="btn navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navmenu">
                         <span class="navbar-toggler-icon"></span>
-                    </button>
+                    </button> -->
+
+                    <button class="btn d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight"><span class="navbar-toggler-icon"></span></button>
+
                     <div class="collapse navbar-collapse flex-grow-0" id="navmenu">
                         <ul class="navbar-nav">
                             <li class="nav-item me-md-5"><a href="#" class="nav-link me-4">HOME</a></li>
@@ -272,7 +309,7 @@
         </div>
     </di>
 
-    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./scripts/offcanvas.js"></script>
 </body>
 
 </html>
