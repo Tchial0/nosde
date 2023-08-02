@@ -1,2 +1,2 @@
-# nosde
+# Nosde
 Edson Dala's Portfolio
