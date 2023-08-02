@@ -14,36 +14,30 @@
 </head>
 
 <body>
-
-    <!-- Offcanvas -->
+    <!-- OFFCANVAS MENU -->
     <div class="offcanvas d-md-none offcanvas-end bg-mydark" tabindex="-1" id="offcanvasRight"
         aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
             <div></div>
-            <button id="btnOffcanvasCloser" type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <button id="btnOffcanvasCloser" type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
             <ul class="navbar-nav ms-auto align-items-center">
                 <li class="nav-item mb-3">
-                    <a class="nav-link hover-link fs-4" href="#home">Home</a>
+                    <a class="nav-link hover-link fs-4" href="#home">HOME</a>
                 </li>
                 <li class="nav-item mb-3">
-                    <a class="nav-link hover-link fs-4" href="#about">About</a>
+                    <a class="nav-link hover-link fs-4" href="#about">SOBRE</a>
                 </li>
                 <li class="nav-item mb-3">
-                    <a class="nav-link hover-link fs-4" href="#projects">Projects</a>
+                    <a class="nav-link hover-link fs-4" href="#projects">PORTFÓLIO</a>
                 </li>
-                <li class="nav-item mb-4">
-                    <a class="nav-link hover-link fs-4" href="#contact">Contact</a>
-                </li>
-                <li class="nav-item mb-5">
-                    <a class="link-button" href="./files/resume.pdf">Resume</a>
-                </li>
-
             </ul>
         </div>
     </div>
 
+    <!-- HOME SECTION -->
     <section id="home" class="position-relative">
         <header>
             <nav class="navbar navbar-expand-md">
@@ -52,31 +46,28 @@
                         <a href="#" class="navbar-brand me-0"><img width="60px" src="./images/logo.png" /></a>
                         <span class="p-2 text-golden ps-0 me-md-5"><b>EDSON DALA</b></span>
                     </div>
-
-                   <!-- <button class="btn navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navmenu">
-                        <span class="navbar-toggler-icon"></span>
-                    </button> -->
-
-                    <button class="btn d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                    aria-controls="offcanvasRight"><span class="navbar-toggler-icon"></span></button>
+                    <button class="btn d-md-none" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><span
+                            class="navbar-toggler-icon"></span></button>
 
                     <div class="collapse navbar-collapse flex-grow-0" id="navmenu">
                         <ul class="navbar-nav">
                             <li class="nav-item me-md-5"><a href="#" class="nav-link me-4">HOME</a></li>
-                            <li class="nav-item me-md-5"><a href="#" class="nav-link me-4">PORTFÓLIO</a></li>
                             <li class="nav-item me-md-5"><a href="#" class="nav-link me-4">SOBRE</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link me-4">CV</a></li>
+                            <li class="nav-item me-md-5"><a href="#" class="nav-link me-4">PORTFÓLIO</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </header>
 
+        <div class="container px-5">
+            <p class="lead text-center mx-auto text-welcome" style="padding-top: 200px;width: 90%;">Olá, Seja bem-vindo a minha
+                curta-metragem!</p>
+        </div>
+
         <p class="home-quote p-5">
-            Às vezes não precisamos de asas, só de dar asas à imaginação. Às vezes não precisamos de liberdade, só de
-            libertar a criatividade.
-            <span class="text-golden"> - Edson Dala</span>
+            Às vezes não precisamos de asas, só de dar asas à imaginação. Às vezes não precisamos de liberdade, só de libertar a criatividade.<span class="text-golden"> - Edson Dala</span>
         </p>
 
     </section>
@@ -260,6 +251,7 @@
         </section>
     </main>
 -->
+
     <footer class="py-5 text-white">
         <div class="container">
             <div class="row">
@@ -292,7 +284,7 @@
         </div>
     </footer>
 
-    <di class="modal fade" tabindex="-1" id="modalAlone">
+    <div class="modal fade" tabindex="-1" id="modalAlone">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -307,7 +299,9 @@
                 </div>
             </div>
         </div>
-    </di>
+    </div>
+
+    <button class="btn-cv">CV</button>
 
     <script src="./scripts/offcanvas.js"></script>
 </body>

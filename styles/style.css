@@ -1,8 +1,8 @@
 :root {
-	--dark: rgb(42,42,42);
+	--dark: rgb(42, 42, 42);
 	--gold: rgb(157, 135, 112);
-	--gray: rgb(128,128,128);
-	--white: rgb(188,188,188);
+	--gray: rgb(128, 128, 128);
+	--white: rgb(188, 188, 188);
 	--open-sans: "Open Sans", sans-serif;
 }
 
@@ -14,7 +14,7 @@
 	font-family: var(--open-sans);
 }
 
-body{
+body {
 	background-color: var(--dark);
 	font-size: 20px;
 }
@@ -36,23 +36,23 @@ footer {
 }
 
 .text-golden {
-  color: var(--gold);
+	color: var(--gold);
 }
 
 .nav-link {
-	color:  var(--gray);
+	color: var(--gray);
 }
 
 .nav-link:hover {
-	color:  var(--gold);
+	color: var(--gold);
 }
 
 .home-quote {
- font-size: 0.9rem;
- position: absolute;
- bottom: 50px;
- max-width: 270px;
- color: var(--gray);
+	font-size: 0.9rem;
+	position: absolute;
+	bottom: 50px;
+	max-width: 270px;
+	color: var(--gray);
 }
 
 @media (min-width: 768px) {
@@ -61,18 +61,55 @@ footer {
 		right: 0;
 		color: var(--white);
 		bottom: 0;
-    }	   
+	}
+}
+
+@media (max-width: 658px) {
+	.text-welcome {
+		color: white;
+	}
 }
 
 .card.render .card-img-top {
 	height: 100px;
 }
 
-.button-view-render{
+.button-view-render {
 	opacity: 0;
 }
 
 .button-view-render:hover {
 	opacity: 0.8;
 	transition: opacity .5s ease;
+}
+
+.btn-cv {
+	color: var(--dark);
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	border: none;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	box-shadow: 0px 0px 6px var(--gold);
+	background-color: var(--gold);
+	padding: 10px;
+	animation-name: btn-cv;
+	animation-timing-function: ease-in;
+	animation-play-state: running;
+	animation-duration: .8s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes btn-cv {
+	from {
+		box-shadow: 0px 0px 5px var(--gold);
+		rotate: -15deg;
+	}
+	to {
+		box-shadow: 0px 0px 20px var(--gold);
+		rotate: 15deg;
+	}
 }
